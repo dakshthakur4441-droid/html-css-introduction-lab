@@ -1,0 +1,38 @@
+<!--
+Student Name: Daksh Thakur
+Roll Number : BCS2025506
+Course      : B.Tech CSE - Second Year
+Subject     : HTML and CSS Introduction Lab (BCS352)
+Assignment  : Assignment 11: Units and CSS Variables - Task 2 (CSS Variables)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Custom Properties (Variables)</title>
+    <style>
+        :root {
+            --brand-color: #0284c7;
+            --card-padding: 16px;
+        }
+        .card {
+            border: 2px solid var(--brand-color);
+            color: var(--brand-color);
+            padding: var(--card-padding);
+            border-radius: 8px;
+            max-width: 400px;
+            background-color: #f8fafc;
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Card with CSS Variables</h2>
+        <p>This card uses --brand-color for its border and text, and --card-padding for 16px internal spacing.</p>
+    </div>
+</body>
+</html>

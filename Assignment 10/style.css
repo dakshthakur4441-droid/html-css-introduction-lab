@@ -1,0 +1,14 @@
+/*
+Student Name: Daksh Thakur
+Roll Number : BCS2025506
+Course      : B.Tech CSE - Second Year
+Subject     : HTML and CSS Introduction Lab (BCS352)
+Assignment  : Assignment 10: CSS Fundamentals - Task 2 Stylesheet (style.css)
+*/
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: darkgreen;
+}

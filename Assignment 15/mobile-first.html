@@ -1,0 +1,63 @@
+<!--
+Student Name: Daksh Thakur
+Roll Number : BCS2025506
+Course      : B.Tech CSE - Second Year
+Subject     : HTML and CSS Introduction Lab (BCS352)
+Assignment  : Assignment 15: Responsive Pages with Media Queries - Task 1 (Mobile-First Card Layout)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First Responsive Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f8fafc;
+        }
+        .cards-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #0f172a;
+        }
+        .card p {
+            color: #475569;
+            margin-bottom: 0;
+        }
+        @media (min-width: 600px) {
+            .cards-container {
+                flex-direction: row;
+            }
+            .card {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mobile-First Card Layout</h1>
+    <div class="cards-container">
+        <div class="card">
+            <h2>Course Overview</h2>
+            <p>Introductory modules cover core web principles, semantic markup, and cascading stylesheets.</p>
+        </div>
+        <div class="card">
+            <h2>Practical Labs</h2>
+            <p>Hands-on sessions ensure mastery over responsive components, flexbox, grid, and version control.</p>
+        </div>
+    </div>
+</body>
+</html>

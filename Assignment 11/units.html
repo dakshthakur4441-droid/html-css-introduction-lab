@@ -1,0 +1,42 @@
+<!--
+Student Name: Daksh Thakur
+Roll Number : BCS2025506
+Course      : B.Tech CSE - Second Year
+Subject     : HTML and CSS Introduction Lab (BCS352)
+Assignment  : Assignment 11: Units and CSS Variables - Task 1 (Units: px, %, rem)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units: px, %, and rem</title>
+    <style>
+        .box-fixed {
+            width: 300px;
+            background-color: #e0f2fe;
+            border: 1px solid #0284c7;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        .box-fluid {
+            width: 50%;
+            background-color: #f0fdf4;
+            border: 1px solid #16a34a;
+            padding: 10px;
+        }
+        .box-fixed p, .box-fluid p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-fixed">
+        <p>Fixed width box (300px) with 1.2rem text.</p>
+    </div>
+    <div class="box-fluid">
+        <p>Fluid width box (50%) with 1.2rem text.</p>
+    </div>
+</body>
+</html>

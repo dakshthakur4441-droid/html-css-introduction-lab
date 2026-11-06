@@ -1,0 +1,41 @@
+<!--
+Student Name: Daksh Thakur
+Roll Number : BCS2025506
+Course      : B.Tech CSE - Second Year
+Subject     : HTML and CSS Introduction Lab (BCS352)
+Assignment  : Assignment 12: Box Model, Cards and Scrolling - Task 1 (Box Model Comparison)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Comparison</title>
+    <style>
+        .box {
+            width: 250px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid #333333;
+            margin-bottom: 25px;
+        }
+        .content-box {
+            box-sizing: content-box;
+            background-color: #e0f2fe;
+        }
+        .border-box {
+            box-sizing: border-box;
+            background-color: #dcfce7;
+        }
+    </style>
+</head>
+<body>
+    <div class="box content-box">
+        <strong>Box 1 (content-box):</strong> Total width = 250px + 40px padding + 10px border = 300px.
+    </div>
+
+    <div class="box border-box">
+        <strong>Box 2 (border-box):</strong> Total width stays exactly 250px.
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!--
+Student Name: Daksh Thakur
+Roll Number : BCS2025506
+Course      : B.Tech CSE - Second Year
+Subject     : HTML and CSS Introduction Lab (BCS352)
+Assignment  : Assignment 12: Box Model, Cards and Scrolling - Task 3 (Scrolling Box)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and Scrolling</title>
+    <style>
+        .scroll-container {
+            width: 200px;
+            height: 200px;
+            overflow: auto;
+            border: 2px solid #334155;
+            padding: 12px;
+            background-color: #f8fafc;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-container">
+        <h3>Scrollable Content</h3>
+        <p>Paragraph 1: CSS overflow property controls what happens when content exceeds the dimensions of an element box.</p>
+        <p>Paragraph 2: When set to auto, scrollbars automatically appear only when the content extends beyond the box boundary.</p>
+        <p>Paragraph 3: This ensures responsive readability without distorting page layouts.</p>
+        <p>Paragraph 4: Additional lines ensure the vertical scrollbar is active and visible.</p>
+    </div>
+</body>
+</html>

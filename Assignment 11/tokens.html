@@ -1,0 +1,41 @@
+<!--
+Student Name: Daksh Thakur
+Roll Number : BCS2025506
+Course      : B.Tech CSE - Second Year
+Subject     : HTML and CSS Introduction Lab (BCS352)
+Assignment  : Assignment 11: Units and CSS Variables - Task 3 (Shared Design Tokens)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokens Shared Stylesheet Demo</title>
+    <link rel="stylesheet" href="tokens.css">
+    <style>
+        .banner {
+            background-color: var(--brand-color);
+            color: #ffffff;
+            padding: var(--card-padding);
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        .info-box {
+            border-left: 4px solid var(--brand-color);
+            padding: var(--card-padding);
+            background-color: #f1f5f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h2>Announcement Banner</h2>
+        <p>This banner uses --brand-color as background and --card-padding for padding.</p>
+    </div>
+
+    <div class="info-box">
+        <h3>Information Box</h3>
+        <p>This second element uses --brand-color for its left border and --card-padding for padding.</p>
+    </div>
+</body>
+</html>

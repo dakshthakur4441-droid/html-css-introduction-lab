@@ -1,0 +1,11 @@
+/*
+Student Name: Daksh Thakur
+Roll Number : BCS2025506
+Course      : B.Tech CSE - Second Year
+Subject     : HTML and CSS Introduction Lab (BCS352)
+Assignment  : Assignment 11: Units and CSS Variables - Task 3 Design Tokens (tokens.css)
+*/
+:root {
+    --brand-color: #0284c7;
+    --card-padding: 16px;
+}

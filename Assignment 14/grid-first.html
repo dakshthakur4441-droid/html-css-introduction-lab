@@ -1,0 +1,46 @@
+<!--
+Student Name: Daksh Thakur
+Roll Number : BCS2025506
+Course      : B.Tech CSE - Second Year
+Subject     : HTML and CSS Introduction Lab (BCS352)
+Assignment  : Assignment 14: CSS Grid Layouts - Task 1 (Three Equal Columns Grid)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid First: Three Equal Columns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+        .item {
+            background-color: #e0f2fe;
+            border: 1px solid #0284c7;
+            padding: 25px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Three Equal Columns Grid</h1>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+</body>
+</html>

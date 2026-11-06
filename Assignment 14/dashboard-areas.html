@@ -1,0 +1,81 @@
+<!--
+Student Name: Daksh Thakur
+Roll Number : BCS2025506
+Course      : B.Tech CSE - Second Year
+Subject     : HTML and CSS Introduction Lab (BCS352)
+Assignment  : Assignment 14: CSS Grid Layouts - Task 3 (Dashboard Layout with Grid Areas)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Areas Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas:
+                "header  header"
+                "sidebar main"
+                "footer  footer";
+            gap: 12px;
+            min-height: 80vh;
+        }
+        .header {
+            grid-area: header;
+            background-color: #1e293b;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .main {
+            grid-area: main;
+            background-color: #ffffff;
+            border: 1px solid #cbd5e1;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: #e2e8f0;
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+            text-align: center;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2>Dashboard Header</h2>
+        </header>
+        <aside class="sidebar">
+            <p><strong>Sidebar Menu</strong></p>
+            <p>Analytics</p>
+            <p>Settings</p>
+        </aside>
+        <main class="main">
+            <h2>Main Workspace</h2>
+            <p>Primary analytics and student performance dashboard widgets appear in this main section.</p>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2026 Invertis University Dashboard</p>
+        </footer>
+    </div>
+</body>
+</html>

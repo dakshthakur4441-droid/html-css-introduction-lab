@@ -1,0 +1,27 @@
+PS D:\Project College\Daksh\HTML-CSS-Practicals\Assignment 2\html-lab> git init --bare ../html-remote
+Initialized empty Git repository in D:/Project College/Daksh/HTML-CSS-Practicals/Assignment 2/html-remote/
+
+PS D:\Project College\Daksh\HTML-CSS-Practicals\Assignment 2\html-lab> git remote add origin ../html-remote
+PS D:\Project College\Daksh\HTML-CSS-Practicals\Assignment 2\html-lab> git remote -v
+origin	../html-remote (fetch)
+origin	../html-remote (push)
+
+PS D:\Project College\Daksh\HTML-CSS-Practicals\Assignment 2\html-lab> git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 720 bytes | 720.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+To ../html-remote
+ * [new branch]      main -> main
+
+PS D:\Project College\Daksh\HTML-CSS-Practicals\Assignment 2\html-lab> cd ..
+PS D:\Project College\Daksh\HTML-CSS-Practicals\Assignment 2> git clone html-remote html-copy
+Cloning into 'html-copy'...
+done.
+
+PS D:\Project College\Daksh\HTML-CSS-Practicals\Assignment 2> cd html-copy
+PS D:\Project College\Daksh\HTML-CSS-Practicals\Assignment 2\html-copy> git log --oneline
+43226f4 Add next meeting heading
+0484714 Add home page
